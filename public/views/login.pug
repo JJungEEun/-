@@ -1,0 +1,35 @@
+doctype html
+html 
+    head 
+        title=  "Login Page"
+        link(rel ='stylesheet', href= '/index.css')
+    body 
+        .intro_bg
+            .header 
+                .search_area 
+                    form
+                        input(type="search" placeholder="Search")
+                        span search
+                ul.nav
+                    li
+                        a(href='/') HOME
+                    li
+                        a(href='#') ABOUT
+                    li
+                        a(href='/user') ORDER
+                    li
+                        a(href='/login') LOGIN
+
+        .main_content 
+            h2 Login Page
+            .img_login
+                img(src="img/login.png" alt="img_login")
+            div
+                form(action="/admit" method="post")
+                    label UserName
+                    input(type="text" name="login")
+                    br
+                    label Password
+                    input(type="password" name="password") 
+                    br
+                    button(type="submit") 제출

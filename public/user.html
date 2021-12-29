@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>방문자 기록</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div class="intro_bg">
+        <div class="header">
+            <div class="search_area">
+                <form>
+                    <input type="search" placeholder="Search">
+                    <span> search </span>
+                </form> 
+            </div>
+            <ul class="nav">
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="/user">ORDER</a></li>
+                <li><a href="/login">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <br> <br>
+        <h2> 향수를 주문하시겠습니까? </h2>
+        <div>
+            <form id="form">
+                <label>주문자 명</label>
+                <input type="text" id="name"><br>
+                <label>주소 말</label>
+                <input type="text" id="memo"><p>
+                <label>원하는 향수</label>
+                <input type="text" id="pf" list="perfume">
+                <datalist id="perfume">
+                    <option> byredo Inflorescence </option>
+                    <option> LELABO BERGAMOTE 22 </option>
+                    <option> Aesop Tacit </option>
+                </datalist>
+                <br>
+                <button type="submit">제출</button>
+            </form>
+        </div>
+        <p>
+        <dev id="list"></dev>
+    </div>
+   
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./frontUser.js"></script>
+</body>
+</html>
